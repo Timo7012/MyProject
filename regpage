@@ -1,0 +1,31 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+
+ <body>
+<h1 align="center">Registration</h1>
+
+<div align="center">
+	<form action="registration_server.php" method="post">
+		EMAIL
+		<p><input type="email" method="POST" name="em"></p>
+		
+		<p>Login</p>
+		<input type="text" method="POST" name="lg">
+
+		<p>Password</p>
+		<input type="password" method="POST" name="pw">
+
+		<p>Confirm password</p>
+		<input type="password" method="POST" name="pw1">
+
+
+
+
+		<p><button>Sign up</button></p>
+	</form>
+</div>
+ </body>
+</html>
+
