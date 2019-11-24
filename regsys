@@ -1,0 +1,36 @@
+<?php
+$pw=$_POST['pw'];
+$em=$_POST['em'];
+$lg=$_POST['lg'];
+$pw1=$_POST['pw1'];
+$link=mysqli_connect('localhost','Tim','AdminPass','auth');
+if($link->connect_error){echo "bad";}
+else{echo "very good";};
+
+if ($pw==$pw1) {}
+else{die("You entered not equal password")};
+$preg_password="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[%\$#@&\*\^\|\/~\{\}\[\]\\\])[A-Za-z\d%\$#@&\*\^\|\/~\{\}\[\]\\\]{8,}$/";
+$preg_login=""
+if(preg_match($preg_password,$pw)){}
+	else{die("You entered not wron form of password");};
+
+if(filter_var($em, FILTER_VALIDATE_EMAIL)){}
+		else{die("You entered not wron form of email");};
+
+if(preg_match($preg_email,$lg)){}
+	else{die("You entered not wron form of login");};
+
+$query1 = "INSERT into `auth1` (password, email) 
+VALUES ('$pw','$em');"; 
+$result=mysqli_query($link,$query1); 
+$link->close();
+?>
+<html>
+ <head>
+<meta charset="UTF-8">
+</head>
+<body>
+<p>You succesfully registred!</p>
+<p><a href="authoriz.php">Go to authorization</a></p>
+</body>
+</html>
