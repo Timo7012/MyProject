@@ -9,23 +9,21 @@
 <div align="center">
 	<form action="registration_server.php" method="post">
 		EMAIL
-		<p><input type="email" method="POST" name="em"></p>
+		<p><input type="email" name="em"></p>
 		
-		<p>Login</p>
-		<input type="text" method="POST" name="lg">
+		<p>login</p>
+		<input type="text" name="lg">
 
 		<p>Password</p>
-		<input type="password" method="POST" name="pw">
+		<input type="password" name="pw">
 
 		<p>Confirm password</p>
-		<input type="password" method="POST" name="pw1">
-
-
-
-
+		<input type="password" name="pw1">
+		
 		<p><button>Sign up</button></p>
 	</form>
 </div>
  </body>
 </html>
+
 
