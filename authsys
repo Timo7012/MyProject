@@ -1,0 +1,17 @@
+<?php
+$pw=$_POST['pw'];
+$em=$_POST['em'];
+$lg=$_POST['lg'];
+
+$link=mysqli_connect('localhost','Tim','AdminPass','auth');
+
+$exs_e = "SELECT * FROM `auth1` where `email`='$em' and `password`='$pw';";
+$exs_l = "SELECT * FROM `auth1` where `login`='$lg' and `password`='$pw';";
+
+$exs_q = mysqli_query($link,$exs_e);
+$exs1_q = mysqli_query($link,$exs_l);
+
+if(mysqli_num_rows($exs_q)>0 or mysqli_num_rows($exs1_q)>0){}
+	else {die("Password or Login/EMAIL Invalid.Please try again.");};
+$link->close();
+?>
