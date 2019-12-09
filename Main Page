@@ -1,20 +1,19 @@
-Main page
 <html>
  <head>
   <meta charset="UTF-8">
   <title>main page</title>
  </head>
  <body>
-<h1></h1>
-<div class=""><a href="">Sector Name 1</a></div>
-
-<div class=""><a href="">Sector Name 1</a></div>
-
+<h1>Main Page</h1>
 <div class=""><a href="">Sector Name 1</a></div>
 
 <div class=""><a href="">Sector Name 2</a></div>
 
 <div class=""><a href="">Sector Name 3</a></div>
+
+<div class=""><a href="">Sector Name 4</a></div>
+
+<div class=""><a href="">Sector Name 5</a></div>
 
 <div class=""><a href="">News</a></div>
 
