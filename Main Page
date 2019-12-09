@@ -1,31 +1,28 @@
+Main page
 <html>
  <head>
+  <link rel="stylesheet" href="new1.css">
   <meta charset="UTF-8">
-  <title>main page</title>
+  <title>Main page</title>
  </head>
  <body>
-<h1>Main Page</h1>
-<div class=""><a href="">Sector Name 1</a></div>
+<h1></h1>
+<div class="button"><a href="">Sector Name 1</a></div>
 
-<div class=""><a href="">Sector Name 2</a></div>
+<div class="button"><a href="">Sector Name 2</a></div>
 
-<div class=""><a href="">Sector Name 3</a></div>
+<div class="button"><a href="">Sector Name 3</a></div>
 
-<div class=""><a href="">Sector Name 4</a></div>
-
-<div class=""><a href="">Sector Name 5</a></div>
-
-<div class=""><a href="">News</a></div>
+<div class="button"><a href="">News</a></div>
 
 <div class=""><a href="">Forum</a></div>
 
 
 <div class="">Content</div>
 
-
 <div class="">Adv</div>
 
-<div class="">Footer</div>
+<div align="center">Footer</div>
 
  </body>
 </html>
