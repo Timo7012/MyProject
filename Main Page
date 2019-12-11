@@ -1,28 +1,25 @@
-Main page
 <html>
  <head>
-  <link rel="stylesheet" href="new1.css">
+  <link rel="stylesheet" href="newsite.css">
   <meta charset="UTF-8">
   <title>Main page</title>
  </head>
- <body>
-<h1></h1>
-<div class="button"><a href="">Sector Name 1</a></div>
+ <body class="bodybackground">
+<h1 class="header1">Name of Site</h1></br>
+<h2 class="header2" align="center">Main Page</h2></br>
+<div class="div_button"><a href="" id="butt1">Base Sector</a></div>
 
-<div class="button"><a href="">Sector Name 2</a></div>
+<div class="div_button"><a href="" id="butt">Advanced Sector</a></div>
 
-<div class="button"><a href="">Sector Name 3</a></div>
+<div class="div_button"><a href="" align="center" id="butt">Sector Name 3</a></div>
 
-<div class="button"><a href="">News</a></div>
+<div class="div_button"><a href="" id="butt">Forum</a></div></br>
 
-<div class=""><a href="">Forum</a></div>
+<div class="content">Content</div>
 
+<div class="adv">Adv</div>
 
-<div class="">Content</div>
-
-<div class="">Adv</div>
-
-<div align="center">Footer</div>
+<div class="footer" align="bottom">Footer</div>
 
  </body>
 </html>
