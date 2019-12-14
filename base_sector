@@ -1,0 +1,25 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="newsite.css">
+  <meta charset="UTF-8">
+  <title>Base Sector</title>
+ </head>
+ <body class="bodybackground">
+<h1 class="header1">Name of Site</h1></br>
+<h2 class="header2" align="center">Base Sector</h2></br>
+<div class="div_button"><a href="" id="butt1">Base Sector</a></div>
+
+<div class="div_button"><a href="" id="butt">Advanced Sector</a></div>
+
+<div class="div_button"><a href="" align="center" id="butt">Sector Name 3</a></div>
+
+<div class="div_button"><a href="" id="butt">Forum</a></div></br>
+
+<div class="content">Content</div>
+
+<div class="adv">Adv</div>
+
+<div class="footer" align="bottom">Footer</div>
+
+ </body>
+</html>
