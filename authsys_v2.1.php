@@ -1,18 +1,17 @@
 <?php
+session_start();
 	require "connect_db.php";
-	session_start();
 	if(isset($_SESSION['login'])){
 		$lg=stripslashes($_SESSION['login']);
 		$lg=mysqli_real_escape_string($link,$lg);
 		$pw=stripslashes($_SESSION['password']);
 		$pw=mysqli_real_escape_string($link,$pw);
-		$exs = "SELECT `login` FROM `auth1` WHERE `email`='$lg' AND `password`='".md5($pw)."';";
+		$exs = "SELECT `login` FROM `auth1` WHERE `login`='$lg' AND `password`='".$pw."';";
 		$exs_q = mysqli_query($link,$exs);
 		if(mysqli_num_rows($exs_q)) {
 			show_authorization_page($_SESSION['login']);
-		} else {
-			unset($_SESSION['login']);
-			unset($_SESSION['password']);
+			} else {
+			session_unset();
 			echo '<html>
 						<head>
 							<meta charset="UTF-8">
@@ -44,18 +43,17 @@
 			$exs_q = mysqli_query($link,$exs);
 			if ( mysqli_num_rows($exs_q) ) {
 				$_SESSION['login']=(($exs_q->fetch_assoc())['login']);
-				$_SESSION['password']=md5($_REQUEST['pw']);
+				$_SESSION['password']=md5($pw);
 			show_authorization_page($_SESSION['login']);
 			} else {
 				$exs = "SELECT `login` FROM `auth1` WHERE `login`='$lg' AND `password`='".md5($pw)."';";
 				$exs_q = mysqli_query($link,$exs);
 				if ( mysqli_num_rows($exs_q) ) {
-					$_SESSION['login']=$_REQUEST['lg'];
-					$_SESSION['password']=md5($_REQUEST['pw']);
+					$_SESSION['login']=$lg;
+					$_SESSION['password']=md5($pw);
 					show_authorization_page($_SESSION['login']);
 				} else {
-					unset($_SESSION['login']);
-					unset($_SESSION['password']);
+					session_unset();
 					echo '<html>
 						<head>
 							<meta charset="UTF-8">
@@ -79,8 +77,7 @@
 				}
 			}
 		} else {
-			unset($_SESSION['login']);
-			unset($_SESSION['password']);
+			session_unset();
 			echo '<html>
 						<head>
 							<meta charset="UTF-8">
@@ -104,7 +101,6 @@
 
 		}
 	}
-
 function show_authorization_page($lg){
 			echo '<html>
 					<head>
@@ -123,4 +119,5 @@ function show_authorization_page($lg){
 
 </html>';
 }
+$link->close();
 ?>
