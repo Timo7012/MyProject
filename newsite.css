@@ -1,208 +1,167 @@
 html{
-
     overflow-x:hidden;
-
 }
-
 a{
-
 	text-decoration:none;
-
 }
-
-
 
 body{
-
 	height: 100%;
-
 	margin:0px;
-
 }
-
-
 
 .bodybackground{
-
 	background-image: url(https://i.pinimg.com/originals/03/28/40/032840aa188bf0b3fe952d17e7e5ff4f.png);
-
 }
-
-
 
 .header1{
-
 display: inline-block;
-
 color: white;
-
 background-color:rgba(5, 16, 235,1);
-
 padding: 0.1em 0.1em;
-
 border: 2px double rgba(232, 47, 14, 1);
-
 text-align: center; 
-
 margin: 10px;
-
 }
-
-
 
 .header2{
-
 display: inline-block;
-
 color: white;
-
 background-color:rgba(5, 16, 235,1);
-
 padding: 1em 1em;
-
 border: 2px double cyan;
-
 margin: 10px;
-
 margin-bottom:15px; 
-
 }
-
-
 
 #butt1{
-
 	color: white;
-
 	font-weight: 250;
-
 	text-decoration: none;
-
 	padding: .5em .5em;
-
 	outline: none;
-
 	border: 2px solid cyan;
-
 	transition: 0.2s;
-
 	background-color:rgba(5, 16, 235, 0.75);
-
 	margin:3px;
-
 	margin-left:10px;
-
 }
-
 #butt{
-
 	color: white;
-
 	font-weight: 250;
-
 	text-decoration: none;
-
 	padding: .5em .5em;
-
 	border: 2px solid cyan;
-
 	transition: 0.2s;
-
 	background-color:rgba(5, 16, 235, 0.75);
-
 	margin:3px;
-
 }
-
-
 
 #butt1:hover{
-
 	font-weight: 300;
-
 	background-color:rgba(5, 16, 235, 1);
-
 }
-
-
 
 #butt:hover{
-
 	font-weight: 300;
-
 	background-color:rgba(5, 16, 235, 1);
-
 }
-
-
 
 .div_button{
-
 	display: inline-block;
-
 }
-
-
 
 .content{
-
 	display:inline-block;
-
 	margin: 15px 0px 0px 10px; 
-
 	color:white;
-
 	background-color:rgba(0, 0, 0, 0.8);
-
 	}
 
-
-
 .adv{
-
 	margin:0;
-
 	border: 1px dashed cyan;
-
 	display:inline;
-
 	color:white;
-
 	background-color:rgba(0, 0, 0, 0.8);
-
 }
-
-
 
 .footer{
-
 	display: inline-block;
-
 	margin-left: 0px;
-
 	padding: .5em .5em;
-
 	text-align: center; 
-
 	background-image: url(https://wallbox.ru/wallpapers/main/201126/8cf1284d352c4927b441a2655d3e1f3f.jpg);
-
 	color:white;
-
 	border-top:2px solid rgba(232, 47, 14, 1);
-
 	width:100%;
-
 	position:absolute;
-
 	top:100%;
-
 	left: 0;
-
 }
-
 .auth{
 	position: absolute;
 	left:75%;
 	top:5%;
 	}
-
+.auth_1{
+	position: absolute;
+	left:75%;
+	top:5%;
+	display: inline-block;
+	color: white;
+	background-color:rgba(5, 16, 235,1);
+	padding: 2px 2px;
+	border: 2px double cyan;
+	text-align: center; 
+	margin: 10px;
+}
+.auth_2{
+	position: absolute;
+	left:75%;
+	top:15%;
+	display: inline-block;
+	color: white;
+	background-color:rgba(5, 16, 235,1);
+	padding: 0.1em 0.1em;
+	border: 2px double rgba(232, 47, 14, 1);
+	text-align: center; 
+	margin: 10px;
+}
+#exit{
+	color: white;
+	font-weight: 50;
+	text-decoration: none;
+	padding: 1px 1px;
+	outline: none;
+	border: 2px solid cyan;
+	background-color:rgba(5, 16, 235, 0.75);
+	margin:1px;
+	margin-left:0px;
+}
+#login{
+	color: white;
+	font-weight: 50;
+	text-decoration: none;
+	padding: 1px 1px;
+	outline: none;
+	border: 2px solid cyan;
+	transition: 0.2s;
+	background-color:rgba(5, 16, 235, 0.75);
+	margin:1px;
+	margin-left:0px;
+}
+.zero{
+	margin:0;
+}
+.a_auth{
+	color: white;
+	font-weight: 50;
+	text-decoration: none;
+	padding: 1px 1px;
+	outline: none;
+	border: 1px solid cyan;
+	background-color:rgba(5, 16, 235, 0.75);
+	margin:1px;
+	margin-left:0px;
+}
