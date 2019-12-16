@@ -1,5 +1,5 @@
 <?php
-	require "contet_maker.php"
+	require "contet_maker.php";
 	require "authsys_v2.1.php";
 	require "ch_check.php";
 ?>
