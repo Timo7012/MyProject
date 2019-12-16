@@ -1,8 +1,9 @@
 <?php
-$exs_p = "SELECT `priv` FROM `auth1` WHERE `email`='$lg' AND `password`='".md5($pw)."';";
+require "connect_db.php";
+$exs_p = "SELECT `priv` FROM `auth1` WHERE `login`='".$_SESSION['login']."';";
 $exs_pq = mysqli_query($link,$exs_p);
-if ($exs_pq==2)
-{
+$e=$exs_pq->fetch_assoc();
+if ($e['priv']==2){
 	echo '<html>
 			<head>
 			<meta charset="UTF-8">
@@ -12,11 +13,6 @@ if ($exs_pq==2)
 			<p><a class="a_auth" href="admin_page.php">Admin Page</a></p>
 			</body>
 			</html>';
-
-
 }
-if ($exs_pq==1)
-{
-
-}
+$link->close();
 ?>

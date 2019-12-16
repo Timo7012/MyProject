@@ -1,5 +1,6 @@
 <?php
 require "authsys_v2.1.php";
+require "ch_check.php";
 ?>
 
 <html>
@@ -14,7 +15,7 @@ require "authsys_v2.1.php";
 <div class="div_button"><a href="base_sector.php" id="butt1">Базовый сектор</a></div>
 <div class="div_button"><a href="advanced_sector.php" id="butt">Продвинутый сектор</a></div>
 <div class="div_button"><a href="news.php" align="center" id="butt">Новости</a></div>
-<div class="div_button"><a href="" id="butt">Форум</a></div></br>
+<div class="div_button"><a href="forum.php" id="butt">Форум</a></div></br>
 <div class="content">Content</div>
 <div class="adv">Adv</div>
 <div class="footer" align="bottom">Махмудов Т.Н. ИУ4-13Б</div>

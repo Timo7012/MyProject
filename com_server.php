@@ -6,5 +6,5 @@
   $name=$_SESSION['login'];
   $com ="INSERT INTO `com` (`name`,`text_com`) VALUES ('$name','$text_comment');";
   $com_q = mysqli_query($link,$com);
-  header("Location: com.php");
+  header("Location: otzivi.php");
 ?>

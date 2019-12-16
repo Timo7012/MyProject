@@ -1,4 +1,7 @@
-
+<?php
+require "authsys_v2.1.php";
+require "connect_db.php";
+?>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -12,24 +15,21 @@
 	<select name="log">
 	 <?php
 	 for($i=1;$i<256;$i++){
-	 $exs_a="SELECT `login` FROM `auth1` WHERE `id`='$id';";
-	 $exs_aq=mysqli_query($link,$exs);
-      echo '"<option>$exs_aq</option>"';};
+	 $exs_a="SELECT `login` FROM `auth1` WHERE `id`='$i';";
+	 $exs_aq=mysqli_query($link,$exs_a);
+	 $ea = $exs_aq->fetch_assoc();
+      echo '"<option>'.$ea['login'].'</option>"';};
      ?>
  	</select>
 	<p>Priv</p>
-
 	<select name="i">
 	 <?php
 	 for($i=0;$i<3;$i++){ 
-      echo '"<option name="i">$i</option>"';};
+      echo '"<option name="i">'.$i.'</option>"';};
      ?>
     </select>
-	<input id="login" type="submit" value="Log In">
-
+	<input id="login" type="submit" value="Change">
 </form>
-<p>Not registred yet?</p>
-<p><a class="a_auth" href="reg_page.php">Registration</a></p>
 </div>
  </body>
  </html>

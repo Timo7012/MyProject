@@ -1,26 +1,26 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="newsite.css">
 </head>
 
- <body>
-<h1 align="center">Registration</h1>
-
+ <body class="bodybackground">
 <div align="center">
+	<h1 align="center">Registration</h1>
 	<form action="registration_server.php" method="post">
-		EMAIL
-		<p><input type="email" name="em"></p>
+		<p>EMAIL</p>
+		<input class="forms_line" type="email" name="em">
 		
-		<p>login</p>
-		<input type="text" name="lg">
+		<p>Login</p>
+		<input class="forms_line" type="text" name="lg">
 
 		<p>Password</p>
-		<input type="password" name="pw">
+		<input class="forms_line" type="password" name="pw">
 
 		<p>Confirm password</p>
-		<input type="password" name="pw1">
+		<input class="forms_line" type="password" name="pw1">
 		
-		<p><button>Sign up</button></p>
+		<p><button id="login">Sign up</button></p>
 	</form>
 </div>
  </body>

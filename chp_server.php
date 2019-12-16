@@ -5,4 +5,5 @@ $i_p=$_REQUEST['i'];
 $exs_c="UPDATE `auth1` SET `priv`='$i_p' WHERE `login`='$login';"; 
 $exs_cq=mysqli_query($link,$exs_c);
 $link->close();
+header("Location: main_page.php");
 ?>

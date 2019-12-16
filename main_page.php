@@ -1,5 +1,6 @@
 <?php
 require "authsys_v2.1.php";
+require "ch_check.php";
 ?>
 <html>
  <head>

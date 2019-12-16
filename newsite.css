@@ -9,6 +9,9 @@ body{
 	height: 100%;
 	margin:0px;
 }
+p{
+	margin: 0;
+}
 
 .bodybackground{
 	background-image: url(https://i.pinimg.com/originals/03/28/40/032840aa188bf0b3fe952d17e7e5ff4f.png);
@@ -165,3 +168,34 @@ margin-bottom:15px;
 	margin:1px;
 	margin-left:0px;
 }
+.forms_line{
+	font-size: 32px;
+	padding: 1px 1px;
+	border: 2px solid green;
+	margin:3px;
+}
+#div_reg{
+	display: inline-block;
+	position: absolute;
+	top:15%;
+	left:40%;
+	color: white;
+	padding: 1px 1px;
+	border: 1px solid cyan;
+	background-color:rgba(5, 16, 235, 0.9);
+}
+.forms_text{
+	font-size: 32px;
+}
+#login_r{
+	color: white;
+	font-size:36px;
+	text-decoration: none;
+	padding: 1px 1px;
+	outline: none;
+	border: 2px solid cyan;
+	transition: 0.2s;
+	background-color:rgba(5, 16, 235, 0.75);
+	margin:1px;
+	margin-left:0px;
+	}
