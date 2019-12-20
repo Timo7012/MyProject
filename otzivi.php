@@ -8,7 +8,7 @@ session_start();
   <title>Отзывы</title>
  </head>
  <body>
- <h3>Вы можете оставить здесь отзыв</h3></br>
+ <h3 class="header2">Вы можете оставить здесь отзыв</h3></br>
 <?php
 require "com.php";
 ?>

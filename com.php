@@ -9,12 +9,12 @@ echo '
 </head>
 <body class="bodybackground">
 <div id="div_reg">
-<h2>Вы зашли как '.$_SESSION['login'].'</h2>
+<h2 class="header2">Вы зашли как '.$_SESSION['login'].'</h2>
 <form name="comment" action="com_server.php" method="post">
   <p class>
     <label>Комментарий:</label>
     <br />
-    <textarea class="forms_line" name="text_comment" cols="30" rows="50"></textarea>
+    <textarea class="forms_line" name="text_comment" cols="20" rows="5"></textarea>
   </p>
   <p>
     <input type="submit" value="Отправить" />

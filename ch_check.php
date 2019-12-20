@@ -15,6 +15,18 @@ if ($e['priv']==2){
 			</body>
 			</html>';
 }
+if ($e['priv']==1){
+	echo '<html>
+			<head>
+			<meta charset="UTF-8">
+			<link rel="stylesheet" href="newsite.css">
+			</head>
+ 			<body>
+			<p><a class="a_auth" href="moder_page.php">Moder Page</a></p>
+			</body>
+			</html>';
+}
+
 $link->close();
 }
 ?>

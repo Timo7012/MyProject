@@ -110,7 +110,7 @@ margin-bottom:15px;
 .auth_1{
 	position: absolute;
 	left:75%;
-	top:5%;
+	top:0%;
 	display: inline-block;
 	color: white;
 	background-color:rgba(5, 16, 235,1);
@@ -198,4 +198,21 @@ margin-bottom:15px;
 	background-color:rgba(5, 16, 235, 0.75);
 	margin:1px;
 	margin-left:0px;
+	}
+	
+.admmod{
+	color: white;
+	background-color:rgba(5, 16, 235,1);
+	padding: 2px 2px;
+	border: 2px double cyan;
+	text-align: center; 
+	margin: 10px;
+	}
+	#comout{
+		display: inline-block;
+		color: white;
+		border: 2px double cyan;
+		padding: 2px 2px;
+		margin: 5px;
+		background-color:rgba(5, 16, 235,1);
 	}
