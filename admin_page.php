@@ -1,6 +1,13 @@
 <?php
-require "authsys_v2.1.php";
 require "connect_db.php";
+if(isset($_SESSION['login'])){
+	$exs_p = "SELECT `priv` FROM `auth1` WHERE `login`='".$_SESSION['login']."';";
+	$exs_pq = mysqli_query($link,$exs_p);
+	$e=$exs_pq->fetch_assoc();
+	if ($e['priv']!=2){
+		header("Location: main_page.php");
+	}
+}
 ?>
 <html>
 <head>

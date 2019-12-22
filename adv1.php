@@ -4,7 +4,7 @@ require "authsys_v2.1.php";
 require "ch_check.php";
 require "connect_db.php";
 
-$exs_txt="SELECT `text_adv` FROM `adv_text` WHERE `idp`='1';";
+$exs_txt="SELECT `content` FROM `adv_text` WHERE `idp`='1';";
 $exs_txtq=mysqli_query($link,$exs_txt);
 $text=$exs_txtq->fetch_assoc();
 
@@ -14,7 +14,7 @@ $exs_nameq=mysqli_query($link,$exs_name);
 $name=$exs_nameq->fetch_assoc();
 $content='
 		<h4>Статья '.$name['name'].'</h4>
-		<p>'.$text['text_adv'].'</p>
+		<p>'.$text['content'].'</p>
 		 </br>
 		 ';
 ?>
