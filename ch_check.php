@@ -12,6 +12,7 @@ if ($e['priv']==2){
 			</head>
  			<body>
 			<p><a class="a_auth" href="admin_page.php">Admin Page</a></p>
+			<p><a class="a_auth" href="moder_page.php">Moder Page</a></p>
 			</body>
 			</html>';
 }
