@@ -10,7 +10,7 @@ require "ch_check.php";
   <title>Продвинутый сектор</title>
  </head>
  <body class="bodybackground">
-<h1 class="header1">Имя сайта</h1></br>
+<h1 class="header1">ITility</h1></br>
 <h2 class="header2" align="center">Продвинутый сектор</h2></br>
 <div class="div_button"><a href="main_page.php" id="butt1">Главная страница</a></div>
 <div class="div_button"><a href="base_sector.php" id="butt1">Базовый сектор</a></div>

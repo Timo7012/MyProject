@@ -10,7 +10,6 @@ if(isset($_SESSION['login'])){
 		header("Location: main_page.php");
 	}
 }
-
 $idpubl=$_POST['idpubl'];
 
 if($_POST['sector']=='Базовый сектор'){
