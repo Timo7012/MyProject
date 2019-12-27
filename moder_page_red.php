@@ -20,17 +20,13 @@ if($_POST['sector']=='Продвинутый сектор'){
 	$sector='adv_text';
 }
 
-$exs_t="SELECT `content` FROM `$sector` WHERE `idp`='$idpubl';";
-$exs_tq=mysqli_query($link,$exs_t);
-$text=$exs_tq->fetch_assoc();
-
-$exs_n="SELECT `name` FROM `$sector` WHERE `idp`='$idpubl';";
-$exs_nq=mysqli_query($link,$exs_n);
-$textn=$exs_nq->fetch_assoc();
+$exs="SELECT `content`,`name` FROM `$sector` WHERE `idp`='$idpubl';";
+$exs=mysqli_query($link,$exs);
+$exs=$exs->fetch_assoc();
 
 
-moder($text,$textn,$idpubl);
-function moder($text,$textn,$idpubl){
+moder($exs,$idpubl);
+function moder($exs,$idpubl){
 			echo '<html>
 					<head>
   						<link rel="stylesheet" href="newsite.css">
@@ -43,11 +39,11 @@ function moder($text,$textn,$idpubl){
 					<h3 name="sector">'.$_POST['sector'].'</h3>
 					<input type="hidden" name="sector" value="'.$_POST['sector'].'">
 					<p class="zero">Название статьи:</p>
-					<textarea cols="10" rows="5" name="text2">'.$textn['name'].'</textarea></br>
+					<textarea cols="10" rows="5" name="text2">'.$exs['name'].'</textarea></br>
 					<h5 class="zero">ID статьи:</h5></br>
 					<span class="zero" name="idpub">'.$idpubl.'</span></br>
 					<input type="hidden" name="idpub" value="'.$idpubl.'">
-			        <textarea cols="100" rows="50" name="text1">'.$text['content'].'</textarea>
+			        <textarea cols="100" rows="50" name="text1">'.$exs['content'].'</textarea>
 					<p align="center"><input id="exit" type="submit" value="Изменить"></p>
 					</form>
 					</div>

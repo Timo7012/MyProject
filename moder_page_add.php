@@ -10,6 +10,17 @@ if(isset($_SESSION['login'])){
 	}
 }
 
+$sec=$_POST['sec'];
+print_r($_POST['sec']);
+
+if($_POST['sec']=='Базовый сектор'){
+	$sector='publications';
+}
+
+if($_POST['sec']=='Продвинутый сектор'){
+	$sector='adv_text';
+}
+
 ?>
 
 <html>
@@ -21,11 +32,12 @@ if(isset($_SESSION['login'])){
 					<div class="admmod">
 					<form action="moder_server_add.php" method="POST">
 					<h2 class="zero">Страница Добавления</h2></br>
-					<h3>Базовый сектор</h3>
+					<h3 name="name_sector"><?php echo $sec; ?></h3>
 					<p class="zero">Название статьи:</p>
 					<textarea cols="10" rows="5" name="text2"></textarea></br>
 			        <p class="zero">Содержание статьи статьи:</p></br>
 			        <textarea cols="100" rows="50" name="text1"></textarea>
+			        <input type="hidden" name="sector" value="<?php echo $sector;?>">
 					<p align="center"><input id="exit" type="submit"  value="Добавить статью"></p>
 					</form>
 					</div>

@@ -10,6 +10,8 @@ if(isset($_SESSION['login'])){
 	}
 }
 
+$exs_con="SELECT `name` FROM `publications`;";
+$exs_conq=mysqli_query($link,$exs_con);
 ?>
 
 <html>
@@ -20,6 +22,7 @@ if(isset($_SESSION['login'])){
 <body class="bodybackground">
 	<div class="admmod">
 		<h3 align="center">Страница модератора</h3>
+		
 		<form action="moder_page_red.php" method="POST">				
 			<select name="sector">
 		  		<option>Базовый сектор</option>
@@ -32,12 +35,17 @@ if(isset($_SESSION['login'])){
 		  		echo '<option>'.$i.'</option>';}
 		  		?>
 		  	</select>
-
 		  	<input type="submit" value="Изменить">
 		</form>
 		
+		<form action="moder_page_add.php" method="POST">
+			<select name="sec">
+				<option>Базовый сектор</option>
+		  		<option>Продвинутый сектор</option>
+			</select>
+			<input class="a_auth" type="submit" value="Добавить Запись">
+		</form>
 
-		<h3><a class="a_auth" href="moder_page_add.php">Добавить Запись</a></h3>
 	
 	</div>
 </body>
