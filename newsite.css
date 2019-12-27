@@ -109,7 +109,7 @@ p{
 	}
 .auth_1{
 	position: absolute;
-	left:75%;
+	left:74.77%;
 	top:0%;
 	display: inline-block;
 	color: white;
@@ -216,3 +216,54 @@ p{
 	margin: 5px;
 	background-color:rgba(5, 16, 235,1);
 	}
+
+.a_sb{
+	position: absolute;
+	top:7%;
+	left:79.5%;
+	display: inline-block;
+	color: white;
+	font-weight: 50;
+	text-decoration: none;
+	padding: 5px 5px;
+	outline: none;
+	border: 1px solid cyan;
+	background-color:rgba(5, 16, 235, 1);
+	margin:1px;
+	margin-left:0px;
+}
+
+
+.a_sb1{
+	position: absolute;
+	top:7%;
+	left:74.2%;
+	display: inline-block;
+	color: white;
+	font-weight: 50;
+	text-decoration: none;
+	padding: 5px 5px;
+	outline: none;
+	border: 1px solid cyan;
+	background-color:rgba(5, 16, 235, 1);
+	margin:1px;
+	margin-left:0px;
+}
+
+.a_sb2{
+	position: absolute;
+	top:7%;
+	left:77.03%;
+	display: inline-block;
+	color: white;
+	font-weight: 50;
+	text-decoration: none;
+	padding: 5px 5px;
+	outline: none;
+	border: 1px solid cyan;
+	background-color:rgba(5, 16, 235, 1);
+	margin:1px;
+	margin-left:0px;
+}
+
+

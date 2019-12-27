@@ -108,16 +108,15 @@ function show_authorization_page($lg){
 						<meta charset="UTF-8">
 					</head>
 					<body>
-					<div class="auth_1">
-					<h5 class="zero">Здравствуйте,'.$lg.'</h5>
-					<p class="zero"></p>
-					<form class="zero" action="deauth.php" method="POST">
-					<input id="exit" type="submit" value="Выйти">
-					</form>
-					</div>
- </body>
-
-</html>';
+						<div class="auth_1">
+							<h5 class="zero">Здравствуйте,'.$lg.'</h5>
+							<p class="zero"></p>
+							<form class="zero" action="deauth.php" method="POST">
+								<input id="exit" type="submit" value="Выйти">
+							</form>
+						</div>
+ 					</body>
+				   </html>';
 }
 $link->close();
 ?>

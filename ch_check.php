@@ -11,8 +11,8 @@ if ($e['priv']==2){
 			<link rel="stylesheet" href="newsite.css">
 			</head>
  			<body>
-			<p><a class="a_auth" href="admin_page.php">Admin Page</a></p>
-			<p><a class="a_auth" href="moder_page.php">Moder Page</a></p>
+			<p><a class="a_sb" href="admin_page.php">Admin Page</a></p>
+			<p><a class="a_sb1" href="moder_page.php">Moder Page</a></p>
 			</body>
 			</html>';
 }
@@ -23,7 +23,7 @@ if ($e['priv']==1){
 			<link rel="stylesheet" href="newsite.css">
 			</head>
  			<body>
-			<p><a class="a_auth" href="moder_page.php">Moder Page</a></p>
+			<p><a class="a_sb2" href="moder_page.php">Moder Page</a></p>
 			</body>
 			</html>';
 }
