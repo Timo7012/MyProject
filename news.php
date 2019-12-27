@@ -12,7 +12,7 @@ require "ch_check.php";
 		<h1 class="header1">ITility</h1></br>
 		<h2 class="header2" align="center">Новости</h2></br>
 		<div class="div_button"><a href="main_page.php" id="butt1">Главная страница</a></div>
-		<div class="div_button"><a href="base_sector.php" id="butt1">Базовый сектор</a></div>
+		<div class="div_button"><a href="base_sector.php" id="butt">Базовый сектор</a></div>
 		<div class="div_button"><a href="advanced_sector.php" id="butt">Продвинутый сектор</a></div>
 		<div class="div_button"><a href="news.php" align="center" id="butt">Новости</a></div>
 		<div class="div_button"><a href="forum.php" id="butt">Форум</a></div></br>
