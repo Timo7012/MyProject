@@ -22,7 +22,7 @@ $exs_conq=mysqli_query($link,$exs_con);
 <body class="bodybackground">
 	<div class="admmod">
 		<h3 align="center">Страница модератора</h3>
-		
+		<p><a class="a_sb123" href="main_page.php">Вернутся на главную страницу</a></p>
 		<form action="moder_page_red.php" method="POST">				
 			<select name="sector">
 		  		<option>Базовый сектор</option>
@@ -35,7 +35,7 @@ $exs_conq=mysqli_query($link,$exs_con);
 		  		echo '<option>'.$i.'</option>';}
 		  		?>
 		  	</select>
-		  	<input type="submit" value="Изменить">
+		  	<input class="a_auth" type="submit" value="Изменить">
 		</form>
 		
 		<form action="moder_page_add.php" method="POST">

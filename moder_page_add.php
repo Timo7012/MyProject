@@ -29,17 +29,18 @@ if($_POST['sec']=='Продвинутый сектор'){
 						<meta charset="UTF-8">
 					</head>
 					<body class="bodybackground">
-					<div class="admmod">
-					<form action="moder_server_add.php" method="POST">
-					<h2 class="zero">Страница Добавления</h2></br>
-					<h3 name="name_sector"><?php echo $sec; ?></h3>
-					<p class="zero">Название статьи:</p>
-					<textarea cols="10" rows="5" name="text2"></textarea></br>
-			        <p class="zero">Содержание статьи статьи:</p></br>
-			        <textarea cols="100" rows="50" name="text1"></textarea>
-			        <input type="hidden" name="sector" value="<?php echo $sector;?>">
-					<p align="center"><input id="exit" type="submit"  value="Добавить статью"></p>
-					</form>
-					</div>
- </body>
+						<div class="admmod">
+							<p><a class="a_sb123" href="moder_page.php">Вернутся на страницу модератора</a></p>
+							<form action="moder_server_add.php" method="POST">
+								<h2 class="zero">Страница Добавления</h2></br>
+								<h3 name="name_sector"><?php echo $sec; ?></h3>
+								<p class="zero">Название статьи:</p>
+								<textarea cols="10" rows="5" name="text2"></textarea></br>
+			        			<p class="zero">Содержание статьи статьи:</p></br>
+			        			<textarea cols="100" rows="50" name="text1"></textarea>
+			        			<input type="hidden" name="sector" value="<?php echo $sector;?>">
+								<p align="center"><input id="exit" type="submit"  value="Добавить статью"></p>
+							</form>
+						</div>
+ 					</body>
 </html>

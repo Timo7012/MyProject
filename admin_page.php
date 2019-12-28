@@ -17,6 +17,7 @@ if(isset($_SESSION['login'])){
 <body class="bodybackground">
 <div class="auth_11">
 	<h1>Admins page</h1>
+	<p><a class="a_sb123" href="main_page.php">Вернутся на главную страницу</a></p>
 	<form action="chp_server.php" method="POST">
 	Login
 	<select name="log">

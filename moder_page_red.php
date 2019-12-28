@@ -34,6 +34,7 @@ function moder($exs,$idpubl){
 					</head>
 					<body class="bodybackground">
 					<div class="admmod">
+					<p><a class="a_sb123" href="moder_page.php">Вернутся на страницу модератора</a></p>
 					<form action="moder_server.php" method="POST">
 					<h2 class="zero">Страница Модератора</h2></br>
 					<h3 name="sector">'.$_POST['sector'].'</h3>
