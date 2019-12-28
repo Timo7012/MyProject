@@ -265,5 +265,14 @@ p{
 	margin:1px;
 	margin-left:0px;
 }
-
+.auth_11{
+	width:1890px;
+	display: inline-block;
+	color: white;
+	background-color:rgba(5, 16, 235,1);
+	padding: 2px 2px;
+	border: 2px double cyan;
+	text-align: center; 
+	margin: 10px;
+}
 
