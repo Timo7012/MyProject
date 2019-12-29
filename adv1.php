@@ -34,6 +34,14 @@ $content='
 <div class="content">
 	<?php
 	echo $content;
+	if(isset($_SESSION['login'])){
+			$exs_p = "SELECT `priv` FROM `auth1` WHERE `login`='".$_SESSION['login']."';";
+			$exs_pq = mysqli_query($link,$exs_p);
+			$e=$exs_pq->fetch_assoc();
+			if ($e['priv']==2 or $e['priv']==1){
+				echo'<h6>ID публикации:'.$url['idp'].'</h6>';
+		}
+	}
 	?>	
 </div>
 <div class="footer" align="bottom">Махмудов Т.Н. ИУ4-13Б</div>
