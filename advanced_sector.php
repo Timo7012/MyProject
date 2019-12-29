@@ -17,10 +17,12 @@ require "ch_check.php";
 <div class="div_button"><a href="advanced_sector.php" id="butt">Продвинутый сектор</a></div>
 <div class="div_button"><a href="news.php" align="center" id="butt">Новости</a></div>
 <div class="div_button"><a href="forum.php" id="butt">Форум</a></div></br>
-<div class="content">
-	<?php
-	require "content_maker_adv.php";
-	?>
+<div id="footer_n">	
+	<div class="content">
+		<?php
+		require "content_maker_adv.php";
+		?>
+	</div>
 </div>
 <div class="adv">Adv</div>
 <div class="footer" align="bottom">Махмудов Т.Н. ИУ4-13Б</div>

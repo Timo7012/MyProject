@@ -79,7 +79,8 @@ p{
 	margin: 70px 0px 0px 10px; 
 	color:white;
 	background-color:rgba(0, 0, 0, 0.8);
-	}
+}
+
 
 .adv{
 	margin:0;
@@ -87,6 +88,10 @@ p{
 	display:inline-block;
 	color:white;
 	background-color:rgba(0, 0, 0, 0.8);
+}
+
+#footer_n{
+	min-height: calc(93vh - 37px);	
 }
 
 .footer{
@@ -98,10 +103,11 @@ p{
 	color:white;
 	border-top:2px solid rgba(232, 47, 14, 1);
 	width:100%;
-	position:absolute;
-	top:100%;
+	position:relative;
+	bottom:0;
 	left: 0;
 }
+
 .auth{
 	position: absolute;
 	left:75%;

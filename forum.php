@@ -17,13 +17,14 @@ require "ch_check.php";
 <div class="div_button"><a href="advanced_sector.php" id="butt">Продвинутый сектор</a></div>
 <div class="div_button"><a href="news.php" align="center" id="butt">Новости</a></div>
 <div class="div_button"><a href="forum.php" id="butt">Форум</a></div></br>
-<div class="content">
-	<h3>Разделы</h3>
-	<a href="otzivi.php">Отзывы о сайте</a></br>
-	<a href=".php">Мнение о базовом секторе</a></br>
-	<a href=".php">А какая видеокарта у вас?</a>
-
+<div id="footer_n">	
+	<div class="content">
+		<h3>Разделы</h3>
+		<a href="otzivi.php">Отзывы о сайте</a></br>
+		<a href=".php">Мнение о базовом секторе</a></br>
+		<a href=".php">А какая видеокарта у вас?</a>
 	</div>
+</div>
 <div class="adv">Adv</div>
 <div class="footer" align="bottom">Махмудов Т.Н. ИУ4-13Б</div>
  </body>
